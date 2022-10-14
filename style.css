@@ -1,9 +1,10 @@
 :root{
-    --clr-background-900: #111;
-    --clr-background-400: #222;
+    --clr-background-900: rgb(17, 18, 19);
+    --clr-background-700: rgb(21, 29, 37);
+    --clr-background-400: rgb(30, 42, 54);
     --clr-primary: rgb(107, 121, 173);
     --clr-accent: rgb(40, 54, 88);
-    --clr-text: rgb(255, 238, 224);
+    --clr-text: rgb(255, 215, 183);
 }
 
 body{
@@ -15,6 +16,10 @@ body{
     font-family: sans-serif;
 }
 
+.material-symbols-outlined{
+    user-select: none;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -22,7 +27,15 @@ main{
     padding-bottom: 300vh;
 }
 
-.filtering{text-align: center;}
+.filtering{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    background: linear-gradient(0deg, var(--clr-background-400), var(--clr-background-900));
+    height: 250px;
+    width: 100%;
+}
 
 .tag-bar, .search-bar{
     display: flex;
@@ -35,14 +48,12 @@ main{
 .search-box{
     display: flex;
     justify-content: space-between;
-    border: 2px solid var(--clr-primary);
-    border-radius: 20em;
-    background-color: var(--clr-accent);
-    width: 90%;
-    max-width: 500px;
+    border-bottom: 8px solid var(--clr-background-900);
+    width: 100%;
 }
 .search-box *{
     margin: .5em;
+    font-size: x-large;
 }
 .search-box:focus-within{outline: solid 5px var(--clr-accent);}
 #book-name{
@@ -53,5 +64,38 @@ main{
     margin: 0;
 }
 #book-name:focus{outline: none;}
+
+/* #endregion */
+
+/* #region Tags */
+
+.tag-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags{
+    display: flex;
+    margin: 1em;
+    justify-content: start;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+    background-color: var(--clr-background-700);
+    border-radius: 2em;
+    border: 2px solid rgba(255, 255, 255, 0.142);
+    margin-right: 5px;
+    padding: 2px 12px 2px 2px;
+}
+.tag span:last-of-type{
+    margin-left: 5px;
+}
 
 /* #endregion */
