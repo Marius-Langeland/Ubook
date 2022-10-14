@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+a{
+    color: var(--clr-text);
+    font-style: unset;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -28,7 +33,6 @@ body{
 main{
     display: flex;
     flex-direction: column;
-
 }
 
 .filtering{
@@ -51,7 +55,7 @@ h1{
 
 .separator{
     max-width: unset;
-    height: 8px;
+    height: 1rem;
     margin-top: 5px;
     background-color: var(--clr-background-900);
 }
@@ -132,3 +136,61 @@ h1{
     min-height: 2rem;
     text-align: center;
 }
+
+
+/* #region Results page */
+
+section.results{
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    align-self: center;
+
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.book{
+    justify-self: center; 
+    position: relative;
+    min-width: 200px;
+    max-width: 300px;
+}
+.book img{
+    width: 100%;
+    opacity: 100%;
+}
+
+.book-text{
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    opacity: 0%;
+    padding: 40% 1rem 20%;
+}
+.book-title{
+    font-size: xx-large;
+}
+.book-description{
+    font-size: smaller;
+}
+
+.book-favorite{cursor: pointer;}
+.book-favorite.enabled{
+    font-variation-settings: 'FILL' 1;
+}
+
+.book *{
+    transition: opacity .3s ease;
+}
+
+.book:hover img{opacity: 10%;}
+.book:hover .book-text{opacity: 100%;}
+
+/* #endregion */
