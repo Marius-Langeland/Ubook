@@ -156,7 +156,7 @@ section.results{
     position: absolute;
     top: 0;
 
-    pointer-events: none;
+    z-index: -1;
 
     display: flex;
     flex-direction: column;
@@ -164,7 +164,7 @@ section.results{
     align-items: center;
     height: 100%;
     opacity: 0%;
-    padding: 40% 1rem 20%;
+    padding: 1rem;
 }
 .book-title{
     font-size: xx-large;
@@ -179,10 +179,10 @@ section.results{
 }
 
 .book *{
-    transition: opacity .3s ease;
+    transition: opacity .3s ease, z-index .1s ease;
 }
 
 .book:hover img{opacity: 10%;}
-.book:hover .book-text{opacity: 100%; pointer-events: unset;}
+.book:hover .book-text{opacity: 100%; z-index: 0;}
 
 /* #endregion */
