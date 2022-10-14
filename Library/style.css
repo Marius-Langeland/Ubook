@@ -128,16 +128,6 @@ h1{
 
 /* #endregion */
 
-.clickable{
-    background-color: var(--clr-background-900);
-    border-radius: 5px 5px 20px 5px;
-    border: 1px solid var(--clr-background-700);
-    min-width: 2rem;
-    min-height: 2rem;
-    text-align: center;
-}
-
-
 /* #region Results page */
 
 section.results{
@@ -166,6 +156,8 @@ section.results{
     position: absolute;
     top: 0;
 
+    pointer-events: none;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -191,6 +183,6 @@ section.results{
 }
 
 .book:hover img{opacity: 10%;}
-.book:hover .book-text{opacity: 100%;}
+.book:hover .book-text{opacity: 100%; pointer-events: unset;}
 
 /* #endregion */
