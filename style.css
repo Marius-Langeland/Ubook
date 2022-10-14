@@ -1,13 +1,30 @@
 :root{
-    --clr-background: #111;
+    --clr-background-900: #111;
+    --clr-background-400: #222;
     --clr-primary: rgb(107, 121, 173);
     --clr-accent: rgb(40, 54, 88);
     --clr-text: rgb(255, 238, 224);
 }
 
-
 body{
     padding: 0;
     margin: 0;
-    background-color: var(--clr-background);
+    background-color: var(--clr-background-900);
+    color: var(--clr-text);
+
+    font-family: sans-serif;
+}
+
+main{
+    display: grid;
+
+    padding-bottom: 300vh;
+}
+
+.tag-bar, .search-bar{
+    position: sticky;
+    top: 0px;
+
+    height: 2em;
+    background-color: var(--clr-background-400);
 }
