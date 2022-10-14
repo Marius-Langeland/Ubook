@@ -16,15 +16,42 @@ body{
 }
 
 main{
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     padding-bottom: 300vh;
 }
 
-.tag-bar, .search-bar{
-    position: sticky;
-    top: 0px;
+.filtering{text-align: center;}
 
-    height: 2em;
-    background-color: var(--clr-background-400);
+.tag-bar, .search-bar{
+    display: flex;
+    justify-content: center;
+    top: 0px;
 }
+
+/* #region Search */
+
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--clr-primary);
+    border-radius: 20em;
+    background-color: var(--clr-accent);
+    width: 90%;
+    max-width: 500px;
+}
+.search-box *{
+    margin: .5em;
+}
+.search-box:focus-within{outline: solid 5px var(--clr-accent);}
+#book-name{
+    color: var(--clr-text);
+    background-color: unset;
+    border: unset;
+    width: 100%;
+    margin: 0;
+}
+#book-name:focus{outline: none;}
+
+/* #endregion */
