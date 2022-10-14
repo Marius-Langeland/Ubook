@@ -7,10 +7,13 @@
     --clr-text: rgb(255, 237, 222);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     
     background-color: var(--clr-background-900);
     color: var(--clr-text);
@@ -26,7 +29,6 @@ main{
     display: flex;
     flex-direction: column;
 
-    padding-bottom: 300vh;
 }
 
 .filtering{
@@ -40,17 +42,23 @@ main{
     width: 100%;
     max-width: 800px;
 }
-h1{margin-bottom: 2em;}
+h1{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ }
 
 .separator{
     max-width: unset;
-    height: 5px;
-    margin: 5px;
+    height: 8px;
+    margin-top: 5px;
     background-color: var(--clr-background-900);
 }
 
 .tag-bar, .search-bar{
-    margin-top: 1em;
+    margin-top: 1rem;
+    padding: 0 1rem;
 }
 
 /* #region Search */
@@ -61,7 +69,7 @@ h1{margin-bottom: 2em;}
     width: 100%;
 }
 .search-box *{
-    font-size: x-large;
+    font-size: larger;
 }
 #book-name{
     color: var(--clr-text);
@@ -70,6 +78,8 @@ h1{margin-bottom: 2em;}
     width: 100%;
 }
 #book-name:focus{outline: none;}
+
+#search-icon{margin-right: 12px;}
 
 /* #endregion */
 
