@@ -46,12 +46,29 @@ main{
     width: 100%;
     max-width: 800px;
 }
+
+.user{
+    display: flex;
+    justify-content: space-between;
+
+    text-decoration: none;
+    padding: 2rem;
+}
 h1{
-    font-size: 2rem;
-    padding: 1rem;
     margin: 0;
+    display: inline-block;
+    font-size: 2rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
- }
+}
+.profile{
+    display: inline-block;
+    padding: .5rem;
+    background-color: var(--clr-background-400);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
 
 .separator{
     max-width: unset;
@@ -161,7 +178,7 @@ section.results{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     opacity: 0%;
     padding: 1rem;
@@ -173,7 +190,7 @@ section.results{
     font-size: smaller;
 }
 
-.book-favorite{cursor: pointer;}
+.book-favorite{cursor: pointer; align-self: flex-end;}
 .book-favorite.enabled{
     font-variation-settings: 'FILL' 1;
 }
@@ -184,5 +201,16 @@ section.results{
 
 .book:hover img{opacity: 10%;}
 .book:hover .book-text{opacity: 100%; z-index: 0;}
+
+.book-title-author{
+    display: flex;
+    flex-direction: column;
+}
+.book-author{
+    margin-bottom: .5rem;
+    opacity: 80%;
+    font-style: italic;
+    font-size: small;
+}
 
 /* #endregion */
