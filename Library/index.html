@@ -24,7 +24,7 @@
     <main>
         <section class="filtering">
             <div class="user">
-                <a href=""><h1>U-bok</h1></a>
+                <a href=""><h1>Bibliotek</h1></a>
                 <span class="material-symbols-outlined profile">person</span>
             </div>
 
@@ -40,23 +40,37 @@
             <div class="tag-bar">
                 <div class="tags">
                     <span class="tag">
-                        <span class="material-symbols-outlined">cancel</span> <span>Non-fiction</span>
+                        <span class="material-symbols-outlined">remove</span> <span>Non-fiction</span>
                     </span>
                     <span class="tag">
-                        <span class="material-symbols-outlined">cancel</span> <span>Fantasy</span>
+                        <span class="material-symbols-outlined">remove</span> <span>Fantasy</span>
                     </span>
                     <span class="tag">
-                        <span class="material-symbols-outlined">cancel</span> <span>Action</span>
+                        <span class="material-symbols-outlined">remove</span> <span>Action</span>
                     </span>
                     <span class="tag">
-                        <span class="material-symbols-outlined">cancel</span> <span>Other-world</span>
+                        <span class="material-symbols-outlined">remove</span> <span>Other-world</span>
                     </span>
                     <span class="tag">
-                        <span class="material-symbols-outlined">cancel</span> <span>Adventure</span>
+                        <span class="material-symbols-outlined">remove</span> <span>Adventure</span>
                     </span>
                 </div>
                 <span id="sort-icon" class="material-symbols-outlined clickable">sort</span>
             </div>
+
+            <aside id="sidebar-filtering">
+                <div class="sidebar-tabs">
+                    <span>Kategori</span>
+                    <span>Tags</span>
+                </div>
+                <div class="sidebar-categories">
+                    <span id="fiction">Skjønnlitteratur</span>
+                    <span id="non-fiction">Sakprosa</span>
+                    <span id="fantasy">Fantasy</span>
+                    <span id="sci-fi">Sci-fi</span>
+                    <span id="biography">Biografi</span>
+                </div>
+            </aside>
         </section>
 
         <section class="results">
@@ -147,6 +161,8 @@
                 </div>
             </div>
         </section>
-    </main>  
+    </main>
+
+    
 </body>
 </html>
