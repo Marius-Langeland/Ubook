@@ -76,9 +76,8 @@ h1{
 
 .separator{
     max-width: unset;
-    height: 1rem;
+    height: 10px;
     background-color: var(--clr-background-900);
-    margin: 1em;
     max-width: var(--width-page-max);
 }
 
@@ -137,15 +136,12 @@ h1{
 }
 #book-name:focus{outline: none;}
 
-#search-icon{margin-right: 12px;}
-
 /* #endregion */
 
 /* #region Tags */
 
 .tag-bar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
@@ -175,17 +171,15 @@ h1{
     margin-left: 5px;
 }
 
-#sort-icon{
-    transform:rotateY(180deg);
-    align-self: flex-start;
-    cursor: pointer;
-
-    background-color: var(--clr-background-900);
-    border-radius: 50%;
-    padding: .5rem;
-}
-
 /* #endregion */
+
+#search-icon, #sort-icon{margin-right: 1rem;}
+#sort-icon{cursor: pointer; align-self: flex-start;}
+#sort-icon:hover{
+    transition: box-shadow .4s ease;
+    box-shadow: 0 0 12px 1px var(--clr-background-900);
+    border-radius: 50%;
+}
 
 /* #region Results page */
 
