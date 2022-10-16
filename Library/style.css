@@ -6,7 +6,7 @@
     --clr-accent: rgb(40, 54, 88);
     --clr-text: rgb(255, 237, 222);
 
-    --width-page-max: 120%;
+    --width-page-max: 1500px;
 }
 
 *{
@@ -21,8 +21,8 @@ a{
 body{
     padding: 0;
     margin: 0;
-    
-    background-color: var(--clr-background-900);
+
+    background-color: var(--clr-background-700);
     color: var(--clr-text);
     
     font-family: sans-serif;
@@ -45,7 +45,7 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-    background: linear-gradient(0deg, var(--clr-background-400), var(--clr-background-900));
+    background: linear-gradient(0deg, transparent, var(--clr-background-900));
 }
 .filtering>*{
     width: 100%;
@@ -57,8 +57,9 @@ main{
     justify-content: space-between;
 
     text-decoration: none;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
+
 h1{
     margin: 0;
     display: inline-block;
@@ -73,13 +74,12 @@ h1{
     cursor: pointer;
 }
 
-
-
 .separator{
     max-width: unset;
     height: 1rem;
-    margin-top: 5px;
     background-color: var(--clr-background-900);
+    margin: 1em;
+    max-width: var(--width-page-max);
 }
 
 .tag-bar, .search-bar{
@@ -179,6 +179,10 @@ h1{
     transform:rotateY(180deg);
     align-self: flex-start;
     cursor: pointer;
+
+    background-color: var(--clr-background-900);
+    border-radius: 50%;
+    padding: .5rem;
 }
 
 /* #endregion */
@@ -191,6 +195,8 @@ section.results{
     max-width: var(--width-page-max);
     padding: 1rem;
     align-self: center;
+
+    background-color: var(--clr-background-900);
 
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -254,3 +260,31 @@ section.results{
 
 /* #endregion */
 
+/* #region Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.separator-l,
+.separator-m,
+.separator-s{
+    background-color: var(--clr-background-900);
+    width: 100%;
+    max-width: var(--width-page-max);
+    margin-top: 3px;
+}
+.separator-l {height: 1em;}
+.separator-m {height: .75em;}
+.separator-s {height: .5em;}
+
+
+/* #endregion */
+
+@media screen and (min-width: 1500px) {
+    .separator{border-radius: 1em;}
+
+    .results{border-radius: 1em 1em 0 0;}
+}
