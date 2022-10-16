@@ -276,9 +276,9 @@ footer{
     max-width: var(--width-page-max);
     margin-top: 3px;
 }
-.separator-l {height: 1em;}
-.separator-m {height: .75em;}
-.separator-s {height: .5em;}
+.separator-l {height: 1em; opacity: 75%;}
+.separator-m {height: .75em; opacity: 50%;}
+.separator-s {height: .5em; opacity: 25%;}
 
 
 /* #endregion */
