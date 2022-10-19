@@ -2,6 +2,10 @@
     --width-page-max: 1500px;
 }
 
+*{
+    transition: background-color .3s ease;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -90,7 +94,7 @@ h1{
 }
 
 #theme-button{
-    
+
 }
 
 .separator{
