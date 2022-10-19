@@ -50,6 +50,12 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
 }
+svg{
+    fill: var(--clr-background-100);
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+}
 
 /* #region Filtering */
 
