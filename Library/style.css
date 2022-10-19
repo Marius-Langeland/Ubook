@@ -51,9 +51,8 @@ h1{
     font-weight: lighter;
 }
 svg{
+    height: 100px;
     fill: var(--clr-background-100);
-    z-index: 2;
-    height: 75px;
 }
 
 /* #region Filtering */
