@@ -271,7 +271,12 @@ section.results{
 }
 
 .book-title{
-
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .2s ease;
+}
+.book-title:hover{
+    text-decoration-color: var(--clr-text);
 }
 
 /* #endregion */
