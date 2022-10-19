@@ -53,8 +53,7 @@ h1{
 svg{
     fill: var(--clr-background-100);
     z-index: 2;
-    height: 100px;
-    width: 100px;
+    height: 75px;
 }
 
 /* #region Filtering */
@@ -84,6 +83,7 @@ svg{
     display: flex;
     min-width: 10%;
     justify-content: space-between;
+    align-items: center;
     user-select: none;
 }
 .options-buttons>*{
