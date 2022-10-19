@@ -4,8 +4,8 @@ window.onload = function(){
     let themeButton = document.querySelector('#theme-switches');
     themeButton.addEventListener('click', function(){
         let pageTheme = document.head.querySelector("#page-theme");
-        let bool = pageTheme.getAttribute('href') == 'darktheme.css';
-        pageTheme.setAttribute('href', bool ? 'lighttheme.css' : 'darktheme.css');
+        let bool = pageTheme.getAttribute('href') == '../themes/darktheme.css';
+        pageTheme.setAttribute('href', bool ? '../themes/lighttheme.css' : '../themes/darktheme.css');
     });
 
 }
