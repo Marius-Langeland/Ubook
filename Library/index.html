@@ -8,7 +8,7 @@
 
     <script src="scripts.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lighttheme.css">
+    <link id="page-theme" rel="stylesheet" href="lighttheme.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
 </head>
@@ -18,9 +18,12 @@
             <div class="user">
                 <a href=""><h1>Title</h1></a>
                 <div class="options-buttons">
-                    <span class="material-symbols-outlined">lightbulb</span>
-                    <span class="material-symbols-outlined">language</span>
-                    <span class="material-symbols-outlined profile">person</span>
+                    <span id="theme-switches">
+                        <span class="material-symbols-outlined">dark_mode</span>
+                        <span class="material-symbols-outlined">light_mode</span>
+                    </span>
+                    <span class="material-symbols-outlined" id="language-button">language</span>
+                    <span class="material-symbols-outlined" id="profile-button">person</span>
                 </div>
             </div>
 
