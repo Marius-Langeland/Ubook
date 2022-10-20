@@ -54,7 +54,7 @@ h1{
     font-weight: lighter;
 }
 svg{
-    height: 100px;
+    height: calc(2vw + 40px);
     fill: var(--clr-background-100);
 }
 
@@ -136,8 +136,6 @@ svg{
 .sidebar-categories{
     display: flex;
     flex-direction: column;
-
-
 }
 
 /* #endregion */
